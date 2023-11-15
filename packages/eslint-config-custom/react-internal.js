@@ -35,5 +35,7 @@ module.exports = {
 
   rules: {
     // add specific rules configurations here
+    "import/no-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
   },
 };
