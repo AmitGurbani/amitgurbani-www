@@ -26,7 +26,12 @@ export function ThemeSwitcher({
     setIsDark((preValue) => !preValue);
   };
   return (
-    <button data-cy="switch" onClick={handleClick} type="button">
+    <button
+      className="dark:text-white"
+      data-cy="switch"
+      onClick={handleClick}
+      type="button"
+    >
       {isDark ? <BsMoon size={24} /> : <BsSun size={24} />}
     </button>
   );
